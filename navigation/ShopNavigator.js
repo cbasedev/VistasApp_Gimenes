@@ -1,14 +1,13 @@
-import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
+import BreadDetailScreen from "../screens/BreadDetailScreen";
 import CategoriesScreen from "../screens/CategoriesScreen";
 import CategoryBreadScreen from "../screens/CategoryBreadScreen";
-import BreadDetailScreen from "../screens/BreadDetailScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import React from 'react';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
 
-const ShopNavigator = () => {
+const ShopNavigator = () => (
 
     <NavigationContainer>
         <Stack.Navigator initialRouteName="Home">
@@ -18,7 +17,6 @@ const ShopNavigator = () => {
         </Stack.Navigator>
     </NavigationContainer>
 
-
-}
+);
 
 export default ShopNavigator;

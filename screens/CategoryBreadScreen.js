@@ -1,5 +1,6 @@
+import { Button, StyleSheet, Text, View } from "react-native";
+
 import React from "react";
-import { View, StyleSheet, Text, Button } from "react-native";
 
 export default function CategoryBreadScreen({ navigation }) {
 
@@ -7,7 +8,7 @@ export default function CategoryBreadScreen({ navigation }) {
 
         <View style={ styles.container }>
             <Text>Categoria - El objetivo es mostrar los productos</Text>
-            <Button title="Ir a Productos" onPress={ () => { navigation.navigate('Productos')}}/>
+            <Button title="Ir a Producto: " onPress={ () => { navigation.navigate('Detail')}}/>
         </View>
 
 
